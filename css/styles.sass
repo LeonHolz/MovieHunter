@@ -21,17 +21,45 @@ html
 
 body
     background-color: $background
-    display: flex
-    flex-direction: column
 
 main
-    background-color: #833c3c
+    height: calc( 100vh - 100px )
 
-footer
-    background-color: #3c837b
-    
-h1
+#container
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    h1
     font-size: 6.5rem
     font-family: $logo-font
     font-weight: 300
     color: $logo-and-movie-title
+
+    .search-field
+        background-color: $search-field-background
+        display: flex
+
+    .search-field__search-box
+        height: 50px
+        background: none
+        border: none
+    
+    .search-field__search-box::placeholder
+        color: $search-field-placeholder-and-icon
+
+    .search-field__button
+        height: 50px
+        border: none
+        background: none
+
+    .search-field__button:hover
+        cursor: pointer
+
+    .search-field__img
+        height: 50px
+
+footer
+    height: 100px

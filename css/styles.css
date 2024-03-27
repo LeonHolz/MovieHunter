@@ -9,21 +9,50 @@ html {
 
 body {
   background-color: #1a1a1a;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
-  background-color: #833c3c;
+  height: calc(100vh - 100px);
 }
 
-footer {
-  background-color: #3c837b;
-}
-
-h1 {
+#container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 6.5rem;
   font-family: "Rowdies", sans-serif;
   font-weight: 300;
   color: #f3f3f3;
+}
+#container .search-field {
+  background-color: #2e2e2e;
+  display: flex;
+}
+#container .search-field__search-box {
+  height: 50px;
+  background: none;
+  border: none;
+}
+#container .search-field__search-box::-moz-placeholder {
+  color: #dedede;
+}
+#container .search-field__search-box::placeholder {
+  color: #dedede;
+}
+#container .search-field__button {
+  height: 50px;
+  border: none;
+  background: none;
+}
+#container .search-field__button:hover {
+  cursor: pointer;
+}
+#container .search-field__img {
+  height: 50px;
+}
+
+footer {
+  height: 100px;
 }/*# sourceMappingURL=styles.css.map */
